@@ -11,11 +11,15 @@ import "@fontsource/poppins/latin-700.css" //importa a ferramenta e a fonts
 
 import './index.css'
 import App from './App.tsx'
+import { BrowserRouter } from 'react-router-dom'
 
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+     <App />
+    </BrowserRouter>
+   
   </StrictMode>,
 )

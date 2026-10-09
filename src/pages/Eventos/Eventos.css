@@ -1,0 +1,71 @@
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Links de navegação */
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+/* Área do Entrar */
+header .Entrar {
+    
+    flex-shrink: 0;
+}
+
+/* Página exclusiva do catálogo */
+.pagina-eventos {
+    width: 100%;
+    min-height: 75vh;
+    padding: 30px 5% 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+/* Título */
+.pagina-eventos h1 {
+    width: fit-content;
+    margin: 0 auto 35px;
+    padding: 0 20px 12px;
+
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #17143f;
+
+    border-bottom: 4px solid #b51d44;
+}
+
+/* Grade */
+.pagina-eventos .grade-eventos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
+    align-items: stretch;
+    gap: 35px;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .pagina-eventos h1 {
+        font-size: 1.8rem;
+    }
+
+    .pagina-eventos .grade-eventos {
+        grid-template-columns: minmax(0, 320px);
+        gap: 25px;
+    }
+}
